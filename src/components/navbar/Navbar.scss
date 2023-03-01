@@ -1,0 +1,108 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1b1d;
+    color: white;
+    position: sticky;
+    top: 0;
+    transition: 0.5s all ease;
+    z-index: 999;
+
+    &.scroll{
+        background-color: white;
+        color: #1a1b1d;
+
+        button{
+            background-color: white !important;
+            color: #1dbf73 !important;
+            border: 1px solid #1dbf73 !important;
+        }
+
+    }
+    
+    .container{
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+            .text{}
+            .dot{
+                color: #1dbf73;
+            }
+        }
+        .links{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+
+            button{
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: 1px solid white;
+                background-color: transparent;
+                cursor: pointer;
+
+                &:hover {
+                background-color: #1dbf73;
+                border-color: #1dbf73;
+                }
+            }
+
+            .user{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  }
+
+                .options{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: absolute;
+                    top: 58px;
+                    right: 0;
+                    padding: 20px;
+                    border: 1px solid lightgray;
+                    background-color: lightgray;
+                    border-radius: 10px;
+                    gap: 10px;
+                    width: 200px;
+                    font-weight: 300;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    hr {
+        width: calc(100% - 2px);
+        height: 0;
+        border-top: 0.1px solid grey;
+        border-bottom: 0.1px solid grey;
+      }
+
+    .menu {
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        color: gray;
+        font-weight: 300;
+        font-family: "Montserrat", sans-serif;
+    }
+}

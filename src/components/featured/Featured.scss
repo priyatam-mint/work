@@ -1,0 +1,103 @@
+.featured{
+    background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/3ab60cecc0e41d034ef57991c6c7369e-1674663049121/bg-hero-6-1792-x2.png');
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1300px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+            
+            h1 {
+                font-size: 50px;
+        
+                span {
+                  font-style: italic;
+                  font-weight: 300;
+                }
+              }
+            .search{
+                background-color: #fff;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                overflow: hidden;
+
+                .searchInput{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        margin: 10px;
+                    }
+
+                    input{
+                        border: none;
+                        outline: none;
+                        width: 400px;
+                        font-size:large;
+                        font-weight: 300;
+                        
+
+                        &::placeholder {
+                            color: gray;
+                          }
+                    }
+
+                }
+
+                button{
+                    height: 50px;
+                    width: 120px;
+                    background-color: #1dbf73;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size:large;
+                    font-weight: 500;
+                }
+            }
+            .popular{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                button{
+                    background-color: transparent;
+                    color: #fff;
+                    border: 1px solid white;
+                    border-radius: 20px;
+                    padding: 5px 20px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        color: black;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        .right{
+            margin-right: -100px;
+            img{
+                height: 600px;
+                
+            }
+        }
+    }
+}
